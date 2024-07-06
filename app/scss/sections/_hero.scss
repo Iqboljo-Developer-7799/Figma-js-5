@@ -1,0 +1,9 @@
+@use "../util" as *;
+
+.hero {
+  background-image: url("../../../images/hero/bg-img2.png");
+  background-repeat: no-repeat;
+  &.active {
+    margin-top: rem(87);
+  }
+}

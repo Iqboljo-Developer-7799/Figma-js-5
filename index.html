@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <main class="hero">
+      <header
+        class="header container d-flex justify-content-between align-items-center py-4"
+      >
+        <div class="header__logo">
+          <img src="./images/header/logo.svg" alt="img of the website" />
+        </div>
+        <ul class="header__links d-none d-md-flex gap-3 text-white">
+          <li><a href="#" class="header__link">Home</a></li>
+          <li><a href="#" class="header__link">About</a></li>
+          <li><a href="#" class="header__link">Service</a></li>
+          <li><a href="#" class="header__link">Portfolio</a></li>
+          <li><a href="#" class="header__link">Blog</a></li>
+        </ul>
+        <button
+          class="d-none d-md-block btn bg-green-900 text-white rounded-5 fs-6"
+        >
+          Contact
+        </button>
+        <i class="fa-solid fa-bars d-block d-md-none text-white menu-icon"></i>
+      </header>
+      <header
+        class="header-mobile d-flex align-items-center justify-content-center position-fixed top-0 start-100 vh-100 vw-100 bg-secondary-subtle"
+      >
+        <ul class="header__links gap-3 text-primary">
+          <li><a href="#" class="header__link">Home</a></li>
+          <li><a href="#" class="header__link">About</a></li>
+          <li><a href="#" class="header__link">Service</a></li>
+          <li><a href="#" class="header__link">Portfolio</a></li>
+          <li><a href="#" class="header__link">Blog</a></li>
+        </ul>
+        <i class="fa-solid fa-x position-absolute close-icon"></i>
+      </header>
+      <section
+        class="about container d-flex flex-column flex-md-row justify-content-between align-items-center py-2 pb-5"
+      >
+        <div class="about__info text-white">
+          <p class="name rounded-5 p-3">Hey, I'm Musa</p>
+          <h2 class="mt-4 lh-1">
+            Building Digital Products, Brands & Experience.
+          </h2>
+          <p class="mt-4 fs-6 text-secondary lh-sm">
+            A Product Design and Visual Designer in SF I”m Specialize in UI/UX,
+            Responsive web design, and visual Development.
+          </p>
+          <div class="about__btns d-flex gap-4 mt-4">
+            <button class="btn btn-warning rounded-5">Hire Me</button>
+            <button class="btn text-white">My Work</button>
+          </div>
+        </div>
+        <div class="about__img">
+          <img src="./images/hero/avatar.png" alt="img of person" />
+        </div>
+      </section>
+      <section class="statistics position-relative">
+        <div
+          class="statistics__container shadow-lg mx-auto bg-white rounded-4 p-5"
+        >
+          <h2 class="text-center">STATISTIC</h2>
+          <div
+            class="statistics d-flex justify-content-between align-items-center mt-5 text-center flex-wrap gap-4"
+          >
+            <div class="statistic">
+              <h3 class="fs-1 mb-2">300+</h3>
+              <p>Projects Delivery</p>
+            </div>
+            <div class="statistic">
+              <h3 class="fs-1 mb-2">8</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="statistic">
+              <h3 class="fs-1 mb-2">16</h3>
+              <p>Awards</p>
+            </div>
+            <div class="statistic">
+              <h3 class="fs-1 mb-2">70+</h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <span class="message position-fixed fs-2">
+      <i class="fa-solid fa-envelope"></i>
+    </span>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+@use "../util" as *;
+
+.about {
+  .name {
+    font-family: cursive;
+    background-color: #094556;
+    width: fit-content;
+  }
+  &__info {
+    h2 {
+      //   font-size: rem(64);
+      font-size: clamp(2.25rem, 4vw, 4rem);
+    }
+    max-width: rem(537);
+  }
+}

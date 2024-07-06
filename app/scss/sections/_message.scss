@@ -1,0 +1,10 @@
+.message {
+  bottom: -100px;
+  right: 4%;
+  color: #43f555;
+  transition: all 250ms ease;
+  cursor: pointer;
+  &.active {
+    bottom: 4%;
+  }
+}

@@ -1,0 +1,15 @@
+@use "../util" as *;
+
+.statistics {
+  &__container {
+    max-width: rem(1000);
+    position: relative;
+    bottom: rem(-100);
+    @media (max-width: rem(420)) {
+      .statistics {
+        display: grid !important;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use "../util" as *;
+
+.header {
+  background-color: rgb(2, 54, 41);
+  img {
+    max-width: rem(77);
+  }
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: fade 0.4s 0s 1 forwards alternate;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      filter: blur(2px);
+    }
+    50% {
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+  }
+}
+.header-mobile {
+  transition: all 250ms ease;
+  .close-icon {
+    right: 4%;
+    top: 4%;
+  }
+  &.active {
+    margin: 0 auto;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
